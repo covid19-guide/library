@@ -4,6 +4,9 @@
   <% if (locals.duplicates) { %>
     <%- include('../partials/warning', {message: template('warning.duplicate', locals.duplicates, locals.parentId) }) %>
   <% } %>
+  <div class="back-to-home-link">
+    <a href="/">← Back to Home</a>    
+  </div>
   <h1 class="headline"><%= title %></h1>
   <div class="kicker">
     <div class="attribution">
